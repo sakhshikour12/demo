@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+    <script src="D:\\Sem_6\\web lab\\webLab\\lab7\\jquery.js"></script>
+
+   
+
+    <style>
+        .page-link{
+            background-color: rgb(110, 197, 251);
+        }
+    </style>
+</head>
+<body>
+
+    <table class="table"  id="tableId"  style="width:60%, border:1px solid black">
+        <thead>
+            <tr>
+                <th>Avatar</th>
+                <th>Id</th>
+                <th scope="col">FullName</th>
+                <th scope="col">Gender</th>
+                <th scope="col">Email</th>
+                <th scope="col">Phone</th>
+                <th scope="col">City</th>
+                <th scope="col">Country</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-file-person" viewBox="0 0 16 16">
+                    <path d="M12 1a1 1 0 0 1 1 1v10.755S12 11 8 11s-5 1.755-5 1.755V2a1 1 0 0 1 1-1h8zM4 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H4z"/>
+                    <path d="M8 10a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/>
+                  </svg></td>
+                  <td>1</td>
+                <td>kiran</td>
+                <td>Female</td>
+                <td>kirankataria12@gmail.com</td>
+                <td>1234567</td>
+                <td>Daharki</td>
+                <td>Pakistan</td>
+               
+            </tr>
+            <tr>
+                <td><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-file-person" viewBox="0 0 16 16">
+                    <path d="M12 1a1 1 0 0 1 1 1v10.755S12 11 8 11s-5 1.755-5 1.755V2a1 1 0 0 1 1-1h8zM4 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H4z"/>
+                    <path d="M8 10a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/>
+                  </svg></td>
+                  <td>2</td>
+                <td>sandhiya</td>
+                <td>Female</td>
+                <td>sandhiyakataria12@gmail.com</td>
+                <td>1234567</td>
+                <td>Daharki</td>
+                <td>Pakistan</td>
+            </tr>
+            <tr>
+                <td><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-file-person" viewBox="0 0 16 16">
+                    <path d="M12 1a1 1 0 0 1 1 1v10.755S12 11 8 11s-5 1.755-5 1.755V2a1 1 0 0 1 1-1h8zM4 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H4z"/>
+                    <path d="M8 10a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/>
+                  </svg></td>
+                  <td>3</td>
+                <td>simran</td>
+                <td>Female</td>
+                <td>simran@gmail.com</td>
+                <td>1234567</td>
+                <td>Daharki</td>
+                <td>Pakistan</td>
+            </tr>
+            <tr>
+                <td><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-file-person" viewBox="0 0 16 16">
+                    <path d="M12 1a1 1 0 0 1 1 1v10.755S12 11 8 11s-5 1.755-5 1.755V2a1 1 0 0 1 1-1h8zM4 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H4z"/>
+                    <path d="M8 10a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/>
+                  </svg></td>
+                  <td>4</td>
+                <td>kanchan</td>
+                <td>Female</td>
+                <td>kanchankataria12@gmail.com</td>
+                <td>1234567</td>
+                <td>Daharki</td>
+                <td>Pakistan</td>
+               
+            </tr>
+            <tr>
+                <td><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-file-person" viewBox="0 0 16 16">
+                    <path d="M12 1a1 1 0 0 1 1 1v10.755S12 11 8 11s-5 1.755-5 1.755V2a1 1 0 0 1 1-1h8zM4 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H4z"/>
+                    <path d="M8 10a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/>
+                  </svg></td>
+                  <td>5</td>
+                <td>sakshi</td>
+                <td>Female</td>
+                <td>sakshi12@gmail.com</td>
+                <td>1234567</td>
+                <td>Daharki</td>
+                <td>Pakistan</td>
+            </tr>
+            <tr>
+                <td><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-file-person" viewBox="0 0 16 16">
+                    <path d="M12 1a1 1 0 0 1 1 1v10.755S12 11 8 11s-5 1.755-5 1.755V2a1 1 0 0 1 1-1h8zM4 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H4z"/>
+                    <path d="M8 10a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/>
+                  </svg></td>
+                  <td>6</td>
+                <td>Ranjeeta</td>
+                <td>Female</td>
+                <td>Ranjeeta12@gmail.com</td>
+                <td>1234567</td>
+                <td>Daharki</td>
+                <td>Pakistan</td>
+            </tr>
+
+            <tr>
+                <td><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-file-person" viewBox="0 0 16 16">
+                    <path d="M12 1a1 1 0 0 1 1 1v10.755S12 11 8 11s-5 1.755-5 1.755V2a1 1 0 0 1 1-1h8zM4 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H4z"/>
+                    <path d="M8 10a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/>
+                  </svg></td>
+                  <td>7</td>
+                <td>Suraksha</td>
+                <td>Female</td>
+                <td>Suraksha12@gmail.com</td>
+                <td>1234567</td>
+                <td>Ghotki</td>
+                <td>Pakistan</td>
+               
+            </tr>
+            <tr>
+                <td><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-file-person" viewBox="0 0 16 16">
+                    <path d="M12 1a1 1 0 0 1 1 1v10.755S12 11 8 11s-5 1.755-5 1.755V2a1 1 0 0 1 1-1h8zM4 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H4z"/>
+                    <path d="M8 10a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/>
+                  </svg></td>
+                  <td>8</td>
+                <td>kashish</td>
+                <td>Female</td>
+                <td>kashish@gmail.com</td>
+                <td>1234567</td>
+                <td>Ghotki</td>
+                <td>Pakistan</td>
+            </tr>
+            <tr>
+                <td><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-file-person" viewBox="0 0 16 16">
+                    <path d="M12 1a1 1 0 0 1 1 1v10.755S12 11 8 11s-5 1.755-5 1.755V2a1 1 0 0 1 1-1h8zM4 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H4z"/>
+                    <path d="M8 10a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/>
+                  </svg></td>
+                  <td>9</td>
+                <td>sakshi kukreja</td>
+                <td>Female</td>
+                <td>sakshikukreja@gmail.com</td>
+                <td>1234567</td>
+                <td>Daharki</td>
+                <td>Pakistan</td>
+            </tr>
+
+
+
+            <tr>
+                <td><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-file-person" viewBox="0 0 16 16">
+                    <path d="M12 1a1 1 0 0 1 1 1v10.755S12 11 8 11s-5 1.755-5 1.755V2a1 1 0 0 1 1-1h8zM4 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H4z"/>
+                    <path d="M8 10a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/>
+                  </svg></td>
+                  <td>10</td>
+                <td>kashish</td>
+                <td>Female</td>
+                <td>kashish@gmail.com</td>
+                <td>1234567</td>
+                <td>Ghotki</td>
+                <td>Pakistan</td>
+            </tr>
+            <tr>
+                <td><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-file-person" viewBox="0 0 16 16">
+                    <path d="M12 1a1 1 0 0 1 1 1v10.755S12 11 8 11s-5 1.755-5 1.755V2a1 1 0 0 1 1-1h8zM4 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H4z"/>
+                    <path d="M8 10a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/>
+                  </svg></td>
+                  <td>11</td>
+                <td>Suraksha</td>
+                <td>Female</td>
+                <td>Suraksha12@gmail.com</td>
+                <td>1234567</td>
+                <td>Ghotki</td>
+                <td>Pakistan</td>
+               
+            </tr>
+            
+            <tr>
+                <td><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-file-person" viewBox="0 0 16 16">
+                    <path d="M12 1a1 1 0 0 1 1 1v10.755S12 11 8 11s-5 1.755-5 1.755V2a1 1 0 0 1 1-1h8zM4 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H4z"/>
+                    <path d="M8 10a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/>
+                  </svg></td>
+                  <td>12</td>
+                <td>sakshi kukreja</td>
+                <td>Female</td>
+                <td>sakshikukreja@gmail.com</td>
+                <td>1234567</td>
+                <td>Daharki</td>
+                <td>Pakistan</td>
+            </tr>
+            
+            <tr>
+                <td><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-file-person" viewBox="0 0 16 16">
+                    <path d="M12 1a1 1 0 0 1 1 1v10.755S12 11 8 11s-5 1.755-5 1.755V2a1 1 0 0 1 1-1h8zM4 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H4z"/>
+                    <path d="M8 10a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/>
+                  </svg></td>
+                  <td>13</td>
+                <td>kiran</td>
+                <td>Female</td>
+                <td>kirankataria12@gmail.com</td>
+                <td>1234567</td>
+                <td>Daharki</td>
+                <td>Pakistan</td>
+               
+            </tr>
+            <tr>
+                <td><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-file-person" viewBox="0 0 16 16">
+                    <path d="M12 1a1 1 0 0 1 1 1v10.755S12 11 8 11s-5 1.755-5 1.755V2a1 1 0 0 1 1-1h8zM4 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H4z"/>
+                    <path d="M8 10a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/>
+                  </svg></td>
+                  <td>14</td>
+                <td>sandhiya</td>
+                <td>Female</td>
+                <td>sandhiyakataria12@gmail.com</td>
+                <td>1234567</td>
+                <td>Daharki</td>
+                <td>Pakistan</td>
+            </tr>
+            <tr>
+                <td><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-file-person" viewBox="0 0 16 16">
+                    <path d="M12 1a1 1 0 0 1 1 1v10.755S12 11 8 11s-5 1.755-5 1.755V2a1 1 0 0 1 1-1h8zM4 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H4z"/>
+                    <path d="M8 10a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/>
+                  </svg></td>
+                  <td>15</td>
+                <td>simran</td>
+                <td>Female</td>
+                <td>simran@gmail.com</td>
+                <td>1234567</td>
+                <td>Daharki</td>
+                <td>Pakistan</td>
+            </tr>
+            <tr>
+                <td><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-file-person" viewBox="0 0 16 16">
+                    <path d="M12 1a1 1 0 0 1 1 1v10.755S12 11 8 11s-5 1.755-5 1.755V2a1 1 0 0 1 1-1h8zM4 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H4z"/>
+                    <path d="M8 10a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/>
+                  </svg></td>
+                  <td>16</td>
+                <td>kanchan</td>
+                <td>Female</td>
+                <td>kanchankataria12@gmail.com</td>
+                <td>1234567</td>
+                <td>Daharki</td>
+                <td>Pakistan</td>
+               
+            </tr>
+            <tr>
+                <td><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-file-person" viewBox="0 0 16 16">
+                    <path d="M12 1a1 1 0 0 1 1 1v10.755S12 11 8 11s-5 1.755-5 1.755V2a1 1 0 0 1 1-1h8zM4 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H4z"/>
+                    <path d="M8 10a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/>
+                  </svg></td>
+                  <td>17</td>
+                <td>sakshi</td>
+                <td>Female</td>
+                <td>sakshi12@gmail.com</td>
+                <td>1234567</td>
+                <td>Daharki</td>
+                <td>Pakistan</td>
+            </tr>
+            <tr>
+                <td><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-file-person" viewBox="0 0 16 16">
+                    <path d="M12 1a1 1 0 0 1 1 1v10.755S12 11 8 11s-5 1.755-5 1.755V2a1 1 0 0 1 1-1h8zM4 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H4z"/>
+                    <path d="M8 10a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/>
+                  </svg></td>
+                  <td>18</td>
+                <td>Ranjeeta</td>
+                <td>Female</td>
+                <td>Ranjeeta12@gmail.com</td>
+                <td>1234567</td>
+                <td>Daharki</td>
+                <td>Pakistan</td>
+            </tr>
+
+            <tr>
+                <td><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-file-person" viewBox="0 0 16 16">
+                    <path d="M12 1a1 1 0 0 1 1 1v10.755S12 11 8 11s-5 1.755-5 1.755V2a1 1 0 0 1 1-1h8zM4 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H4z"/>
+                    <path d="M8 10a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/>
+                  </svg></td>
+                  <td>19</td>
+                <td>kiran</td>
+                <td>Female</td>
+                <td>kirankataria12@gmail.com</td>
+                <td>1234567</td>
+                <td>Daharki</td>
+                <td>Pakistan</td>
+               
+            </tr>
+            <tr>
+                <td><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-file-person" viewBox="0 0 16 16">
+                    <path d="M12 1a1 1 0 0 1 1 1v10.755S12 11 8 11s-5 1.755-5 1.755V2a1 1 0 0 1 1-1h8zM4 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H4z"/>
+                    <path d="M8 10a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/>
+                  </svg></td>
+                  <td>20</td>
+                <td>sandhiya</td>
+                <td>Female</td>
+                <td>sandhiyakataria12@gmail.com</td>
+                <td>1234567</td>
+                <td>Daharki</td>
+                <td>Pakistan</td>
+            </tr>
+
+            
+        </tbody>
+    </table>
+
+
+    <nav aria-label="Page navigation example" style="margin-left:1100px">
+        <ul class="pagination">
+          <li class="page-item">
+            <a class="page-link" href="#" aria-label="Previous">
+              <span aria-hidden="true">&laquo;</span>
+            </a>
+          </li>
+          <li class="page-item" ><a class="page-link" href="#">1</a></li>
+          <li class="page-item"><a class="page-link" href="#">2</a></li>
+          <li class="page-item"><a class="page-link" href="#">3</a></li>
+          <li class="page-item"><a class="page-link" href="#">4</a></li>
+         
+          <li class="page-item">
+            <a class="page-link" href="#" aria-label="Next">
+              <span aria-hidden="true">&raquo;</span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+
+
+    
+    
+
+    
+
+    <script>
+        var pageNum=1;
+        var trData=$("#tableId tr");
+       
+       
+        $("document").ready(function(){
+
+            $("#tableId").html($("#tableId tr").slice(0,6));
+
+
+            $("ul li:eq(1)").click(callFirstPage);
+            
+            $("ul li:eq(2)").click(callsecondPage);
+            $("ul li:eq(3)").click(callThirdPage);
+            $("ul li:eq(4)").click(callFourthPage); 
+            
+
+
+
+            function callFirstPage(){
+                
+                $("#tableId").html($("#tableId tr").slice(0,6));
+                pageNum=1;
+            }
+            function callsecondPage(){
+                $("#tableId").html(trData[0]).append(trData.slice(6,11));
+        
+                pageNum=2;
+            }
+
+            function callThirdPage(){
+                
+                $("#tableId").html(trData[0]).append(trData.slice(11,16));
+            
+                pageNum=3;
+            }
+            
+            function callFourthPage(){
+                $("#tableId").html(trData[0]).append(trData.slice(16,21));
+            
+                pageNum=4;
+            }
+
+
+
+
+            
+            
+            
+            
+
+
+        });
+
+
+       
+    </script>
+
+   
+   
+    
+</body>
+</html>
+
+
+
+    
